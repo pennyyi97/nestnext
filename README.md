@@ -1,7 +1,12 @@
 # NEST-NEXT AGGREGATED EXAMPLE
 
-This example demonstrates how to use nest-next to add server side rendering to [nest](https://github.com/nestjs/nest) with [next.js](https://github.com/zeit/next.js/).
+* nest-next 프로젝트 테스트
+* 프로젝트 실행 방법은 notion 참고
+  * [notion 링크](https://sbdoc.notion.site/64560c1e69004aa8a3e8993a228085f2?v=20fa613540234ff18ebb859e117d025f)
 
-All needed components are expected to be under one project, one repo, with this folder being the root of the repo.
-
-> You need to build the project first
+---
+## 프로젝트 실행 방법
+```
+npm run build
+npm run start
+```
