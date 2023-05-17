@@ -3,7 +3,7 @@
     "target": "esnext",
     "module": "esnext",
     "jsx": "preserve",
-    "strict": true,
+    "strict": false,
     "pretty": true,
     "noImplicitAny": true,
     "alwaysStrict": true,
