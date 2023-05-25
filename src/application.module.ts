@@ -7,7 +7,9 @@ import { BlogService } from './blog/blog.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { UsersModule } from './users/users.module';
+import { CatsModule } from './cats/cats.module';
 import User from './users/entities/users.entity';
+import { Cat } from './cats/entities/cat.entity';
 
 @Module({
   imports: [
@@ -27,10 +29,12 @@ import User from './users/entities/users.entity';
       username: process.env.DB_USER,
       password: process.env.DB_PASS,
       database: process.env.DB_DATABASE,
-      entities: [User],
+      entities: [User, Cat],
       synchronize: true,
+      logging: true,
     }),
     UsersModule,
+    CatsModule,
   ],
   controllers: [AppController, BlogController],
   providers: [BlogService],

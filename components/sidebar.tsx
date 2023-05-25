@@ -33,6 +33,11 @@ const Sidebar: FC = () => {
             <a>Blog</a>
           </Link>
         </li>
+        <li>
+          <Link href="/views/cats" as="/cats">
+            <a>Cats</a>
+          </Link>
+        </li>
         <style jsx>{`
           ul li a {
             text-decoration: none;
